@@ -110,9 +110,6 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 # 小影 解锁Vip (By @hiepkimcdtk55)
 ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip url script-response-body NobyDa/Surge/JS/vivavideo.js
 
-
-
-
 # 酷我音乐SVIP (By yxiaocai)
 ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) url script-response-body NobyDa/Surge/JS/Kuwo.js
 ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=1
