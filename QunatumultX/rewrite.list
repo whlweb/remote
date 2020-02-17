@@ -5,27 +5,27 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ;知乎网页重定向
 ^https?:\/\/www\.zhihu\.com\/question\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
 
-;微博应用内去广告 (By yichahucha https://github.com/yichahucha/surge/tree/master)
+# 微博应用内去广告 (By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|\!/photos/pic_recommend_status) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
 
-;Netflix 获取 IMDb 分数 (IMDb、douaban）(By yichahucha https://github.com/yichahucha/surge/tree/master)
+# Netflix 获取 IMDb 分数 (IMDb、douaban）(By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 
-;JD App 显示历史价格 (By yichahucha https://github.com/yichahucha/surge/tree/master)
+# JD App 显示历史价格 (By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
-;Taobao App 显示历史价格 (By yichahucha https://github.com/yichahucha/surge/tree/master)
+# Taobao App 显示历史价格 (By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^https?://amdc\.m\.taobao\.com/amdc/mobileDispatch url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 ^https://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
 #################################################################################
 
-;去微信公众号广告 (by Choler https://github.com/Choler/Surge)
+# 去微信公众号广告 (by Choler https://github.com/Choler/Surge)
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/Aweme.js
 
-;去微信公众号广告 (by Choler https://github.com/Choler/Surge)
+# 去微信公众号广告 (by Choler https://github.com/Choler/Surge)
 ^https://aweme-eagle(.*)\.snssdk\.com\/aweme/.+/(feed|aweme/post|follow/feed)/ url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/Aweme.js
 
 # 网易考拉 去广告 (By Choler https://github.com/Choler/Surge)
@@ -36,14 +36,14 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 
 #################################################################################
 
-;用药助手专业版 (By Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
+# 用药助手专业版 (By Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
 ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) url script-response-body Primovist/DingXiangDrugs.js
 
-;哔哩哔哩 App 去广告
+# 哔哩哔哩 App 去广告
 ;by onewayticket255 https://github.com/onewayticket255/Surge-Script
 ^https?:\/\/ap(i|p)\.bilibili\.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index))\?access_key url script-response-body Primovist/Bilibili.js
 
-;哔哩哔哩 App 去广告   (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
+# 哔哩哔哩 App 去广告   (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
 ;http-response https://app.bilibili.com/x/v2/space\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js
 ;http-response https://app.bilibili.com/x/resource/show/tab\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js
 ;http-response https://app.bilibili.com/x/v2/feed/index\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js
@@ -54,10 +54,10 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ;http-response https://api.bilibili.com/pgc/view/app/season url script-response-body https://raw.githubusercontent.com/onewayticket255/UnblockBangumi/master/surge/surge%20bilibili%20season.js
 ;http-response https://api.bilibili.com/pgc/player/api/playurl url script-response-body https://raw.githubusercontent.com/onewayticket255/UnblockBangumi/master/surge/surge%20bilibili%20playurl.js
 
-;知乎去广告整合   (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
+# 知乎去广告整合   (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
 ^https?:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/Zhihu.js
 
-;知乎去广告 (By onewayticket255 https://github.com/onewayticket255/Surge-Script )
+# 知乎去广告 (By onewayticket255 https://github.com/onewayticket255/Surge-Script )
 ;http-response https://api.zhihu.com/moments\?(action|feed_type) url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
 ;http-response https://api.zhihu.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
 ;http-response https://api.zhihu.com/v4/questions url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
@@ -95,7 +95,7 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 # 哔哩哔哩番剧开启1080P+ By NobyDa https://github.com/NobyDa/Script/tree/master
 ^https?:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
 
-;VUE Vlog Pro By NoByDa https://github.com/NobyDa/Script/tree/master
+# VUE Vlog Pro By NoByDa https://github.com/NobyDa/Script/tree/master
 ^https?:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js
 
 # VSCO滤镜VIP NoByDa https://github.com/NobyDa/Script/tree/master
@@ -104,7 +104,7 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 # 彩云天气 Vip NoByDa https://github.com/NobyDa/Script/tree/master
 ^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js
 
-# 扫描全能王 pro 
+# 扫描全能王 pro
 ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
 
 # 水印精灵 vip (By Alex0510)
