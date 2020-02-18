@@ -3,7 +3,7 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 #################################################################################
 
 ;Resso IN丨ID
-;(?<=(carrier|account|sim|sys)_region=)cn url 307 id
+(?<=(carrier|account|sim|sys)_region=)cn url 307 id
 
 ;TikTok By Choler&Paris ^_^
 (.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
