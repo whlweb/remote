@@ -95,7 +95,6 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 
 #################################################################################
 
-
 # 爱美剧Vip (by huihui）(官网：app.meiju2018.com)
 ^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index) url script-response-body NobyDa/QuantumultX/File/aimeiju.js
 # 广告
