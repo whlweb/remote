@@ -3,13 +3,29 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 #################################################################################
 
 ;Resso IN丨ID
-(?<=(carrier|account|sim|sys)_region=)cn url 307 id
+;(?<=(carrier|account|sim|sys)_region=)cn url 307 id
 
 ;TikTok By Choler&Paris ^_^
-(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
-(?<=(carrier|account|sys)_region=)CN url 307 JP
+;(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
+;(?<=(carrier|account|sys)_region=)CN url 307 JP
 ;解锁港区请取消下条注释，与美区不兼容
 ;(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 8.0.0
+
+# tiktok封区解锁
+(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
+(?<=(carrier|sys)_region=)CN url 307 JP
+(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 15.0.0
+(?<=(carrier|account|sys|sim)_region=)cn url 307 in
+
+
+#TikTok解锁封区去水印(根据需求 复制到本地取消注释)
+;(?<=(carrier|account|sys|sim)_region=)CN url 307 JP
+#美区
+;(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
+#港区
+;(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 8.4.0
+
+
 #################################################################################
 
 ;知乎网页重定向
@@ -136,6 +152,20 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=1
 
 #################################################################################
+
+# 驾校一点通 (by @superuv)
+^https:\/\/vipapi\.jxedt\.com\/vip\/check url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/jxydt.js
+
+#克拉壁纸  解锁付费壁纸 (By @Dachaw)
+^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/clarity.js
+
+#################################################################################
+
+#document (By langkhach https://github.com/langkhach270389/Scripting)
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/langkhach/documents.js
+
+#itranslate&lingo&voice&converse(By langkhach https://github.com/langkhach270389/Scripting)
+^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/langkhach/itranslate.js
 
 # Termius (By langkhach https://github.com/langkhach270389/Scripting)
 https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/Terminus.js
