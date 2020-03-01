@@ -158,7 +158,6 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 #克拉壁纸  解锁付费壁纸 (By @Dachaw)
 ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body clarity.js
 
-
 #################################################################################
 
 #document (By langkhach https://github.com/langkhach270389/Scripting)
@@ -166,7 +165,6 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 
 #itranslate&lingo&voice&converse(By langkhach https://github.com/langkhach270389/Scripting)
 ^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body langkhach/itranslate.js
-
 
 # Termius (By langkhach https://github.com/langkhach270389/Scripting)
 https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body langkhach/Terminus.js
