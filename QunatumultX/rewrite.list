@@ -99,7 +99,7 @@ ttps?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-
 #################################################################################
 
 ;WPS VIP By eHpo https://github.com/eHpo1/Surge/tree/master/Script
-^https?:\/\/account\.wps\.cn\/api\/users\/ url script-response-body https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
+^https://account.wps.cn/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
 #################################################################################
 
