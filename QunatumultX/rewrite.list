@@ -1,4 +1,4 @@
-hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.ximalaya.com,*.y.qq.com,ios.prod.ftl.netflix.com,*.bilibili.com,*.iqiyi.com,*.smzdm.com,*.uve.weibo.com,*.video.qq.com,*.rrys2019.com,account.wps.cn,amdc.m.taobao.com,api.gamer.com.tw,api.m.jd.com,api.meiease.c*,api.picsart.c*,api.resso.app,api.vuevideo.net,api.weibo.cn,apic.musixmatch.com,license.pdfexpert.com,mapi.weibo.com,mp.weixin.qq.com,music.163.com,newdrugs.dxy.cn,trade-acs.m.taobao.com,sk.ulysses.app,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, *.zhihu.com, aweme*.snssdk.com, *.kuwo.cn, ios.xiaoxiaoapps.com, api*.tiktokv.com, *.musical.ly, *.amemv.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, sp.kaola.com, r.inews.qq.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api.gyrosco.pe, api1.dobenge.cn, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.termius.com, api.bjxkhc.com, viva.v21xy.com, dida365.com, ticktick.com, biz.caiyunapp.com, api.gotokeep.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, splice.oracle.*.com, api.gamer.com.tw,api.gamer.com.tw, *.xiangxiangapps.com,api.termius.com,bmall.camera360.com,photos.adobe.io, license.pdfexpert.com,apic.musixmatch.com, dayone.me, sk.ulysses.app, backend.getdrafts.com,lcs-mobile-cops.adobe.io, api.bjxkhc.com, h5.ele.me, i.meituan.com,daojia.jd.com,user.qunar.com
+hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.ximalaya.com,*.y.qq.com,ios.prod.ftl.netflix.com,*.bilibili.com,*.iqiyi.com,*.smzdm.com,*.uve.weibo.com,*.video.qq.com,*.rrys2019.com,account.wps.cn,amdc.m.taobao.com,api.gamer.com.tw,api.m.jd.com,api.meiease.c*,api.picsart.c*,api.resso.app,api.vuevideo.net,api.weibo.cn,apic.musixmatch.com,license.pdfexpert.com,mapi.weibo.com,mp.weixin.qq.com,music.163.com,newdrugs.dxy.cn,trade-acs.m.taobao.com,sk.ulysses.app,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, *.zhihu.com, aweme*.snssdk.com, *.kuwo.cn, ios.xiaoxiaoapps.com, api*.tiktokv.com, *.musical.ly, *.amemv.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, sp.kaola.com, r.inews.qq.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api.gyrosco.pe, api1.dobenge.cn, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.termius.com, api.bjxkhc.com, viva.v21xy.com, dida365.com, ticktick.com, biz.caiyunapp.com, api.gotokeep.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, splice.oracle.*.com, api.gamer.com.tw,api.gamer.com.tw, *.xiangxiangapps.com,api.termius.com,bmall.camera360.com,photos.adobe.io, license.pdfexpert.com,apic.musixmatch.com, dayone.me, sk.ulysses.app, backend.getdrafts.com,lcs-mobile-cops.adobe.io, api.bjxkhc.com, h5.ele.me, i.meituan.com,daojia.jd.com,user.qunar.com,daojia.jd.com,gameapi.hellobike.com
 
 #################################################################################
 
@@ -43,8 +43,8 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
 # Taobao App 显示历史价格 (By yichahucha https://github.com/yichahucha/surge/tree/master)
-^https?://amdc\.m\.taobao\.com/amdc/mobileDispatch url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
-^https://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+ttps?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
 #################################################################################
 
@@ -53,6 +53,9 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 
 # 去微信公众号广告 (by Choler https://github.com/Choler/Surge)
 ^https://aweme-eagle(.*)\.snssdk\.com\/aweme/.+/(feed|aweme/post|follow/feed)/ url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/Aweme.js
+
+# 去微信公众号广告 (By Choler https://github.com/Choler/Surge)
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
 # 网易考拉 去广告 (By Choler https://github.com/Choler/Surge)
 ^https://sp\.kaola\.com/api/openad$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wykaola.js
@@ -66,8 +69,7 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) url script-response-body Primovist/DingXiangDrugs.js
 
 # 哔哩哔哩 App 去广告
-;by onewayticket255 https://github.com/onewayticket255/Surge-Script
-^https?:\/\/ap(i|p)\.bilibili\.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index))\?access_key url script-response-body Primovist/Bilibili.js
+^https?:\/\/ap(i|p)\.bilibili\.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index))\?access_key url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/Bilibili.js
 
 # 哔哩哔哩 App 去广告   (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
 ;http-response https://app.bilibili.com/x/v2/space\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js
@@ -82,6 +84,11 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 
 # 知乎去广告整合   (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
 ^https?:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/Zhihu.js
+
+# 京东 App 去广告  (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|myOrderInfo|orderTrackBusiness) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/JDAdRemove.js
+
+
 
 # 知乎去广告 (By onewayticket255 https://github.com/onewayticket255/Surge-Script )
 ;http-response https://api.zhihu.com/moments\?(action|feed_type) url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
