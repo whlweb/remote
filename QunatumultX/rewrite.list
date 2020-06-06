@@ -104,12 +104,11 @@ ttps?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-
 #################################################################################
 
 # 爱美剧Vip (by huihui）(官网：app.meiju2018.com)
-^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index) url script-response-body NobyDa/QuantumultX/File/aimeiju.js
+^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/aimeiju.js
 # 广告
 ^https?://api.bjxkhc.com/index.php/app/ios/ads/index url reject-dict
 ^https?://api.bjxkhc.com/index.php/app/ios/ver/index_ios$ url reject
 ^https?://api.bjxkhc.com/index.php/app/ios/pay/ok$ url reject-dict
-
 
 # Keep 解锁私人课程和动作库 (QX存在bug 该脚本可能无法生效) By NobyDa  https://github.com/NobyDa/Script/tree/master
 ^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js
