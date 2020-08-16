@@ -28,12 +28,25 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 
 #################################################################################
 
-;知乎网页重定向
-^https?:\/\/www\.zhihu\.com\/question\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
+;知乎
+^https?:\/\/pic\d\.zhimg\.com\/70\/ url reject-200
+^https?:\/\/(api|www)\.zhihu\.com\/(ab|adx|fringe|commercial|ad-style-service|.*(recommendations|extended|featured-comment-ad)|api\/v4\/(brand|mcn|(answer|question)s\/\d+\/meta_related_topics)|brand\/questions\/\d+\/activity\/answers\/red-packet(\/|\?|$)) url reject-200
+
+;交行买单吧
+^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do$ url reject-200
+^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/getPopAds\.do$  url reject-200
 
 # 微博应用内去广告 (By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
+
+;百度贴吧重定向
+^https?+:\/\/(?:c\.)?+tieba\.baidu\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+^https?+:\/\/jump2\.bdimg\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+;百度知道重定向
+^https?+:\/\/zhidao\.baidu\.com url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+;知乎网页重定向
+^https?+:\/\/www\.zhihu\.com\/question url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
 
 
 # Netflix 获取 IMDb 分数 (IMDb、douaban）(By yichahucha https://github.com/yichahucha/surge/tree/master)
@@ -51,10 +64,10 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 #################################################################################
 
 # 去微信公众号广告 (by Choler https://github.com/Choler/Surge)
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/Aweme.js
+;^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/Aweme.js
 
 # 去微信公众号广告 (by Choler https://github.com/Choler/Surge)
-^https://aweme-eagle(.*)\.snssdk\.com\/aweme/.+/(feed|aweme/post|follow/feed)/ url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/Aweme.js
+;^https://aweme-eagle(.*)\.snssdk\.com\/aweme/.+/(feed|aweme/post|follow/feed)/ url script-response-body https://raw.githubusercontent.com/Choler/Surge/master/Script/Aweme.js
 
 # 去微信公众号广告 (By Choler https://github.com/Choler/Surge)
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
@@ -70,9 +83,12 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 # 用药助手解锁专业版 (By Primovist)
 ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js
 
-# 彩云天气 Vip
-^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js
 
+;什么值得买去广告 By Primovist
+^https?:\/\/(h(aojia|omepage)|(articl|baik)e|s)-api\.smzdm\.com\/(home|sou)(?!\/list_filter) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/SMZDM.js
+
+;京东 App 去广告 By Primovist
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|myOrderInfo|orderTrackBusiness) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/JDAdRemove.js
 
 # 哔哩哔哩 App 去广告
 ^https?:\/\/ap(i|p)\.bilibili\.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index))\?access_key url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/Bilibili.js
