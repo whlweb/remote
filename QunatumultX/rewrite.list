@@ -29,6 +29,11 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 #################################################################################
 
 ;知乎
+^https://link\.zhihu\.com/\?target=(https?)%3A//(.*) url 307 $1://$2
+
+^https://oia\.zhihu\.com url 307 https://zhuanlan.zhihu.com
+
+
 ^https?:\/\/pic\d\.zhimg\.com\/70\/ url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/(ab|adx|fringe|commercial|ad-style-service|.*(recommendations|extended|featured-comment-ad)|api\/v4\/(brand|mcn|(answer|question)s\/\d+\/meta_related_topics)|brand\/questions\/\d+\/activity\/answers\/red-packet(\/|\?|$)) url reject-200
 
