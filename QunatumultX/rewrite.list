@@ -137,7 +137,7 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ^https?://api.bjxkhc.com/index.php/app/ios/pay/ok$ url reject-dict
 
 # Keep 解锁私人课程和动作库 (QX存在bug 该脚本可能无法生效) By NobyDa  https://github.com/NobyDa/Script/tree/master
-^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js
+;^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js
 
 # PicsArt美易 pro By NobyDa https://github.com/NobyDa/Script/tree/master
 ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
@@ -147,7 +147,7 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-requ
 https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 
 # Splice 视频编辑器 pro By NobyDa https://github.com/NobyDa/Script/tree/master
-^https:\/\/splice\.oracle\.\w+\.com\/devices\/me url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Splice.js
+;^https:\/\/splice\.oracle\.\w+\.com\/devices\/me url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Splice.js
 
 # 扫描全能王 pro By NobyDa https://github.com/NobyDa/Script/tree/master
 ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
