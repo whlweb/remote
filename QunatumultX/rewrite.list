@@ -153,7 +153,7 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
 
 # 滴答清单 pro By NobyDa https://github.com/NobyDa/Script/tree/master
-^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/DiDaQingDan.js
+;^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/DiDaQingDan.js
 
 # 91短视频 By NobyDa https://github.com/NobyDa/Script/tree/master
 ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
