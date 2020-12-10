@@ -51,19 +51,28 @@ experimental:
 dns:
   enable: true # set true to enable dns (default is false)
   ipv6: false # default is false
-  listen: 0.0.0.0:5450
+  listen: 0.0.0.0:53
   enhanced-mode: fake-ip # or redir-host
   fake-ip-range: 198.18.0.1/16 # if you don't know what it is, don't change it
+  default-nameserver:
+  - 119.29.29.29
+  - 1.0.0.1
   nameserver:
     - 117.50.10.10
     - 119.29.29.29
     - 223.5.5.5
     - tls://dns.rubyfish.cn:853 # dns over tls
     - tls://dns.google
-  fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
-    - tls://dns.rubyfish.cn:853 # dns over tls
+  fallback:
+    - https://cloudflare-dns.com/dns-query # dns over tls
     - https://1.1.1.1/dns-query # dns over https
-  fallback-filter:
-    geoip: true # default
-    ipcidr: # ips in these subnets will be considered polluted
-      - 240.0.0.0/4
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '+.xboxlive.com'
+    - 'msftconnecttest.com'
+    - 'xbox.*.microsoft.com'
