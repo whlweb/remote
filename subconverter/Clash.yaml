@@ -58,7 +58,7 @@ dns:
     - 1.0.0.1
   enhanced-mode: fake-ip # or redir-host
   # fake-ip-range: 198.18.0.1/16 # if you don't know what it is, don't change it
-  fake-ip-filter:
+  fake-ip-filter: # fake ip white domain list
     - '*.lan'
     - localhost.ptlogin2.qq.com
     - '+.srv.nintendo.net'
