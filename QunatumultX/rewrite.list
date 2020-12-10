@@ -122,7 +122,6 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 # 京东 App 去广告  (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|myOrderInfo|orderTrackBusiness) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/JDAdRemove.js
 
-
 # 知乎去广告 (By onewayticket255 https://github.com/onewayticket255/Surge-Script )
 ;http-response https://api.zhihu.com/moments\?(action|feed_type) url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
 ;http-response https://api.zhihu.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
