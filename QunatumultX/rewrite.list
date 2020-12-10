@@ -95,7 +95,6 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 # 用药助手解锁专业版 (By Primovist)
 ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js
 
-
 ;什么值得买去广告 By Primovist
 ^https?:\/\/(h(aojia|omepage)|(articl|baik)e|s)-api\.smzdm\.com\/(home|sou)(?!\/list_filter) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/SMZDM.js
 
