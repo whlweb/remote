@@ -1,8 +1,8 @@
 # HTTP 端口
-port: 7890
+ port: 7890
 
 # SOCKS5 端口
-socks-port: 7891
+ socks-port: 7891
 
 # Linux 及 macOS 的 redir 端口
 # redir-port: 7892
@@ -33,11 +33,11 @@ external-controller: 127.0.0.1:9090
 # secret: ""
 
 # 实验性功能
-experimental:
-  ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为true
+ experimental:
+  ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为 true
   # interface-name: en0 # 出站接口名称
 
-# 本地 SOCKS5/HTTP(S) 服务器认证
+# 本地 SOCKS5/HTTP (S) 服务器认证
 # authentication:
 #  - "user1:pass1"
 #  - "user2:pass2"
@@ -50,9 +50,10 @@ hosts:
 #   'alpha.clash.dev': '::1'
 
 dns:
-  enable: false # set true to enable dns (default is false)
+  enable: true # set true to enable dns (default is false)
   ipv6: false # default is false
   listen: 0.0.0.0:53
+
   enhanced-mode: fake-ip # or redir-host
   # fake-ip-range: 198.18.0.1/16 # if you don't know what it is, don't change it
   default-nameserver:
