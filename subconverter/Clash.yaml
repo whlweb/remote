@@ -50,11 +50,14 @@ hosts:
 #   'alpha.clash.dev': '::1'
 
 dns:
-  enable: true # set true to enable dns (default is false)
+  enable: false # set true to enable dns (default is false)
   ipv6: false # default is false
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip # or redir-host
   # fake-ip-range: 198.18.0.1/16 # if you don't know what it is, don't change it
+  default-nameserver:
+    - 119.29.29.29
+    - 1.0.0.1
   fake-ip-filter: # fake ip white domain list
     - '*.lan'
     - localhost.ptlogin2.qq.com
