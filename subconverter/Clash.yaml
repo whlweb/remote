@@ -83,7 +83,6 @@ dns:
     - 'https://59.110.53.209/dns-query'
   # fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
     # - tcp://1.1.1.1
-  
   fallback-filter:
     geoip: true # default
     ipcidr: # ips in these subnets will be considered polluted
