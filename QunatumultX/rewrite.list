@@ -1,30 +1,7 @@
-hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.ximalaya.com,*.y.qq.com,ios.prod.ftl.netflix.com,*.bilibili.com,*.iqiyi.com,*.smzdm.com,*.uve.weibo.com,*.video.qq.com,*.rrys2019.com,account.wps.cn,amdc.m.taobao.com,api.gamer.com.tw,api.m.jd.com,api.meiease.c*,api.picsart.c*,api.resso.app,api.vuevideo.net,api.weibo.cn,apic.musixmatch.com,license.pdfexpert.com,mapi.weibo.com,mp.weixin.qq.com,music.163.com,newdrugs.dxy.cn,trade-acs.m.taobao.com,sk.ulysses.app,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, *.zhihu.com, aweme*.snssdk.com, *.kuwo.cn, ios.xiaoxiaoapps.com, api*.tiktokv.com, *.musical.ly, *.amemv.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, sp.kaola.com, r.inews.qq.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api.gyrosco.pe, api1.dobenge.cn, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.termius.com, api.bjxkhc.com, viva.v21xy.com, dida365.com, ticktick.com, biz.caiyunapp.com, api.gotokeep.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, splice.oracle.*.com, api.gamer.com.tw,api.gamer.com.tw, *.xiangxiangapps.com,api.termius.com,bmall.camera360.com,photos.adobe.io, license.pdfexpert.com,apic.musixmatch.com, dayone.me, sk.ulysses.app, backend.getdrafts.com,lcs-mobile-cops.adobe.io, api.bjxkhc.com, h5.ele.me, i.meituan.com,daojia.jd.com,user.qunar.com,daojia.jd.com,gameapi.hellobike.com, biz.caiyunapp.com, biz.caiyunapp.com, bjxkhc, passport.biligame.com,weixin110.qq.com,node.52tt.com
+hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.ximalaya.com,*.y.qq.com,ios.prod.ftl.netflix.com,*.bilibili.com,*.iqiyi.com,*.smzdm.com,*.uve.weibo.com,*.video.qq.com,*.rrys2019.com,account.wps.cn,amdc.m.taobao.com,api.gamer.com.tw,api.m.jd.com,api.meiease.c*,api.picsart.c*,api.resso.app,api.vuevideo.net,api.weibo.cn,apic.musixmatch.com,license.pdfexpert.com,mapi.weibo.com,mp.weixin.qq.com,music.163.com,newdrugs.dxy.cn,trade-acs.m.taobao.com,sk.ulysses.app,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, *.zhihu.com, aweme*.snssdk.com, *.kuwo.cn, ios.xiaoxiaoapps.com, *.musical.ly, *.amemv.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, sp.kaola.com, r.inews.qq.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api.gyrosco.pe, api1.dobenge.cn, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.termius.com, api.bjxkhc.com, viva.v21xy.com, dida365.com, ticktick.com, biz.caiyunapp.com, api.gotokeep.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, splice.oracle.*.com, api.gamer.com.tw,api.gamer.com.tw, *.xiangxiangapps.com,api.termius.com,bmall.camera360.com,photos.adobe.io, license.pdfexpert.com,apic.musixmatch.com, dayone.me, sk.ulysses.app, backend.getdrafts.com,lcs-mobile-cops.adobe.io, api.bjxkhc.com, h5.ele.me, i.meituan.com,daojia.jd.com,user.qunar.com,daojia.jd.com,gameapi.hellobike.com, biz.caiyunapp.com, biz.caiyunapp.com, bjxkhc, passport.biligame.com,weixin110.qq.com,node.52tt.com,*.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com
 
 
 #################################################################################
-
-;Resso IN丨ID
-;(?<=(carrier|account|sim|sys)_region=)cn url 307 id
-
-;TikTok By Choler&Paris ^_^
-;(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
-;(?<=(carrier|account|sys)_region=)CN url 307 JP
-;解锁港区请取消下条注释，与美区不兼容
-;(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 8.0.0
-
-# tiktok封区解锁
-;(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
-;(?<=(carrier|sys)_region=)CN url 307 JP
-;(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 15.0.0
-;(?<=(carrier|account|sys|sim)_region=)cn url 307 in
-
-
-#TikTok解锁封区去水印(根据需求 复制到本地取消注释)
-;(?<=(carrier|account|sys|sim)_region=)CN url 307 JP
-#美区
-;(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 14.0.0
-#港区
-;(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 8.4.0
 
 ;微信 App 内被屏蔽链接快捷跳转
 ^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi url script-response-body https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
