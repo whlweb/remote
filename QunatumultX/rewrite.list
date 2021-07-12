@@ -1,4 +1,4 @@
-hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.ximalaya.com,*.y.qq.com,ios.prod.ftl.netflix.com,*.bilibili.com,*.iqiyi.com,*.smzdm.com,*.uve.weibo.com,*.video.qq.com,*.rrys2019.com,account.wps.cn,amdc.m.taobao.com,api.gamer.com.tw,api.m.jd.com,api.meiease.c*,api.picsart.c*,api.resso.app,api.vuevideo.net,api.weibo.cn,apic.musixmatch.com,license.pdfexpert.com,mapi.weibo.com,mp.weixin.qq.com,music.163.com,newdrugs.dxy.cn,trade-acs.m.taobao.com,sk.ulysses.app,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, *.zhihu.com, aweme*.snssdk.com, *.kuwo.cn, ios.xiaoxiaoapps.com, *.musical.ly, *.amemv.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, sp.kaola.com, r.inews.qq.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api.gyrosco.pe, api1.dobenge.cn, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.termius.com, api.bjxkhc.com, viva.v21xy.com, biz.caiyunapp.com, api.gotokeep.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, splice.oracle.*.com, api.gamer.com.tw,api.gamer.com.tw, *.xiangxiangapps.com,api.termius.com,bmall.camera360.com,photos.adobe.io, license.pdfexpert.com,apic.musixmatch.com, dayone.me, sk.ulysses.app, backend.getdrafts.com,lcs-mobile-cops.adobe.io, api.bjxkhc.com, h5.ele.me, i.meituan.com,daojia.jd.com,user.qunar.com,daojia.jd.com,gameapi.hellobike.com, biz.caiyunapp.com, biz.caiyunapp.com, bjxkhc, passport.biligame.com,weixin110.qq.com,node.52tt.com,*.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com
+hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.ximalaya.com,*.y.qq.com,ios.prod.ftl.netflix.com,*.bilibili.com,*.iqiyi.com,*.smzdm.com,*.uve.weibo.com,*.video.qq.com,*.rrys2019.com,account.wps.cn,amdc.m.taobao.com,api.gamer.com.tw,api.m.jd.com,api.meiease.c*,api.picsart.c*,api.resso.app,api.vuevideo.net,api.weibo.cn,apic.musixmatch.com,license.pdfexpert.com,mapi.weibo.com,mp.weixin.qq.com,music.163.com,newdrugs.dxy.cn,trade-acs.m.taobao.com,sk.ulysses.app,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, *.zhihu.com, aweme*.snssdk.com, *.kuwo.cn, ios.xiaoxiaoapps.com, *.musical.ly, *.amemv.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, sp.kaola.com, r.inews.qq.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api.gyrosco.pe, api1.dobenge.cn, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.termius.com, api.bjxkhc.com, viva.v21xy.com, biz.caiyunapp.com, api.gotokeep.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, splice.oracle.*.com, api.gamer.com.tw,api.gamer.com.tw, *.xiangxiangapps.com,api.termius.com,bmall.camera360.com,photos.adobe.io, license.pdfexpert.com,apic.musixmatch.com, dayone.me, sk.ulysses.app, backend.getdrafts.com,lcs-mobile-cops.adobe.io, api.bjxkhc.com, h5.ele.me, i.meituan.com,daojia.jd.com,user.qunar.com,daojia.jd.com,gameapi.hellobike.com, biz.caiyunapp.com, biz.caiyunapp.com, bjxkhc, passport.biligame.com,weixin110.qq.com,node.52tt.com,*.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.polaxiong.com
 
 
 #################################################################################
@@ -23,7 +23,7 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 
 # 微博应用内去广告 (By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
-^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
+^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist)|video/tiny_stream_video_list|photo/info|remind/unread_count) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 
 ;百度贴吧重定向
 ^https?+:\/\/(?:c\.)?+tieba\.baidu\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
@@ -50,6 +50,7 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 # Taobao App 显示历史价格 (By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+
 
 #################################################################################
 
@@ -83,15 +84,16 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ^https?:\/\/ap(i|p)\.bilibili\.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index))\?access_key url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/Bilibili.js
 
 # 哔哩哔哩 App 去广告   (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
-;http-response https://app.bilibili.com/x/v2/space\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js
-;http-response https://app.bilibili.com/x/resource/show/tab\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js
-;http-response https://app.bilibili.com/x/v2/feed/index\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js
-;http-response https://app.bilibili.com/x/v2/account/mine\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20account.js
-;http-response https://app.bilibili.com/x/v2/view\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js
-;http-response https://api.bilibili.com/x/v2/reply/main\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js
-;http-response https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js
-;http-response https://api.bilibili.com/pgc/view/app/season url script-response-body https://raw.githubusercontent.com/onewayticket255/UnblockBangumi/master/surge/surge%20bilibili%20season.js
-;http-response https://api.bilibili.com/pgc/player/api/playurl url script-response-body https://raw.githubusercontent.com/onewayticket255/UnblockBangumi/master/surge/surge%20bilibili%20playurl.js
+# 哔哩哔哩动画去广告 (onewayticket255)
+https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)) url reject-200
+https://api.bilibili.com/x/v2/dm/ad url reject-200
+#https://app.bilibili.com/x/v2/space\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js
+https://app.bilibili.com/x/resource/show/tab\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js
+https://app.bilibili.com/x/v2/feed/index\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js
+https://app.bilibili.com/x/v2/account/mine\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20account.js
+https://app.bilibili.com/x/v2/view\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js
+https://api.bilibili.com/x/v2/reply/main\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js
+https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js
 
 # 知乎去广告整合   (by Primovist https://github.com/primovist/ScriptsForSurge/tree/master)
 ^https?:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/Zhihu.js
@@ -100,11 +102,11 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|myOrderInfo|orderTrackBusiness) url script-response-body https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/JDAdRemove.js
 
 # 知乎去广告 (By onewayticket255 https://github.com/onewayticket255/Surge-Script )
-;http-response https://api.zhihu.com/moments\?(action|feed_type) url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
-;http-response https://api.zhihu.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
-;http-response https://api.zhihu.com/v4/questions url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
-;http-response https://api.zhihu.com/people/ url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
-
+https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad) url reject-200
+https://api.zhihu.com/people/ url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
+https://api.zhihu.com/moments/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
+https://api.zhihu.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
+https://api.zhihu.com/v4/questions url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
 #################################################################################
 
 ;WPS VIP By eHpo https://github.com/eHpo1/Surge/tree/master/Script
@@ -167,6 +169,9 @@ https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-resp
 
 # 彩云天气 Vip
 ^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js
+
+# 泼辣修图 解锁高级特权 (需恢复购买)
+^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js
 
 #################################################################################
 
