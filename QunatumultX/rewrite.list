@@ -176,6 +176,9 @@ https://api.zhihu.com/v4/questions url script-response-body https://raw.githubus
 # Termius (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
 https:\/\/api\.termius\.com\/api\/.+\/bulk\/account\/ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/terminus.js
 
+#CamScanner (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/camscaner.js
+
 #camera360 (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
 ^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/camera360.js
 
