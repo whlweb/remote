@@ -111,8 +111,6 @@ https://api.zhihu.com/v4/questions url script-response-body https://raw.githubus
 
 #################################################################################
 
-
-
 # Keep 解锁私人课程和动作库 (QX存在bug 该脚本可能无法生效) By NobyDa  https://github.com/NobyDa/Script/tree/master
 ;^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js
 
@@ -163,37 +161,41 @@ https://api.zhihu.com/v4/questions url script-response-body https://raw.githubus
 
 #################################################################################
 
-#document (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/documents.js
+#vsco(By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/vsco.js
 
-#itranslate&lingo&voice&converse(By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/itranslate.js
+#calm (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/api\.calm\.com\/me$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/calm.js
 
-# Termius (By langkhach https://github.com/langkhach270389/Scripting)
-https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/Terminus.js
+#document (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/documents.js
 
-#camera360 (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/camera360.vip.js
+#itranslate&lingo&voice&converse(By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/itranslate.js
 
-#lightroom (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/Lightroom.js
+# Termius (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+https:\/\/api\.termius\.com\/api\/.+\/bulk\/account\/ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/terminus.js
 
-#Pdfexpert (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/Pdfexpert.vip.js
+#camera360 (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/camera360.vip.js
 
-#Musixmatch (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/musixmatch.miao.js
+#lightroom (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/lightroom.js
 
-#dayone (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/dayone\.me\/api\/(users|v2\/users\/account-status)$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/dayone.js
+#Pdfexpert (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/pdfexpert.js
 
-#ulysses (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1
+#Musixmatch (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/musixmatch.js
 
-^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/ulysses.js
+#dayone (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/dayone.js
 
-#draft (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/draft.js
+#ulysses (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+;^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/ulysses.js
 
-#phothop&PSexpress (By langkhach https://github.com/langkhach270389/Scripting)
-^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/photoshop.js
+#draft (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/draft.js
+
+#phothop&PSexpress (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/photoshop.js
