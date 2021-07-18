@@ -1,4 +1,4 @@
-hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.ximalaya.com,*.y.qq.com,ios.prod.ftl.netflix.com,*.bilibili.com,*.iqiyi.com,*.smzdm.com,*.uve.weibo.com,*.video.qq.com,*.rrys2019.com,account.wps.cn,amdc.m.taobao.com,api.gamer.com.tw,api.m.jd.com,api.meiease.c*,api.picsart.c*,api.resso.app,api.vuevideo.net,api.weibo.cn,apic.musixmatch.com,license.pdfexpert.com,mapi.weibo.com,mp.weixin.qq.com,music.163.com,newdrugs.dxy.cn,trade-acs.m.taobao.com,sk.ulysses.app,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, *.zhihu.com, aweme*.snssdk.com, *.kuwo.cn, ios.xiaoxiaoapps.com, *.musical.ly, *.amemv.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, sp.kaola.com, r.inews.qq.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api.gyrosco.pe, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.termius.com, api.bjxkhc.com, viva.v21xy.com, biz.caiyunapp.com, api.gotokeep.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, splice.oracle.*.com, api.gamer.com.tw,api.gamer.com.tw, *.xiangxiangapps.com,api.termius.com,bmall.camera360.com,photos.adobe.io, license.pdfexpert.com,apic.musixmatch.com, dayone.me, sk.ulysses.app, backend.getdrafts.com,lcs-mobile-cops.adobe.io, api.bjxkhc.com, h5.ele.me, i.meituan.com,daojia.jd.com,user.qunar.com,daojia.jd.com,gameapi.hellobike.com, biz.caiyunapp.com, biz.caiyunapp.com, bjxkhc, passport.biligame.com,weixin110.qq.com,node.52tt.com,*.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.polaxiong.com
+hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.ximalaya.com,*.y.qq.com,ios.prod.ftl.netflix.com,*.bilibili.com,*.iqiyi.com,*.smzdm.com,*.uve.weibo.com,*.video.qq.com,*.rrys2019.com,account.wps.cn,amdc.m.taobao.com,api.gamer.com.tw,api.m.jd.com,api.meiease.c*,api.picsart.c*,api.resso.app,api.vuevideo.net,api.weibo.cn,apic.musixmatch.com,license.pdfexpert.com,mapi.weibo.com,mp.weixin.qq.com,music.163.com,newdrugs.dxy.cn,trade-acs.m.taobao.com,sk.ulysses.app,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, *.zhihu.com, aweme*.snssdk.com, *.kuwo.cn, ios.xiaoxiaoapps.com, *.musical.ly, *.amemv.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, sp.kaola.com, r.inews.qq.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api.gyrosco.pe, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.termius.com, api.bjxkhc.com, viva.v21xy.com, biz.caiyunapp.com, api.gotokeep.com, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, splice.oracle.*.com, api.gamer.com.tw,api.gamer.com.tw, *.xiangxiangapps.com,bmall.camera360.com,photos.adobe.io, apic.musixmatch.com, dayone.*, sk.ulysses.app, backend.getdrafts.com,lcs-mobile-cops.adobe.io, api.bjxkhc.com, h5.ele.me, i.meituan.com,daojia.jd.com,user.qunar.com,daojia.jd.com,gameapi.hellobike.com, biz.caiyunapp.com, biz.caiyunapp.com, bjxkhc, passport.biligame.com,weixin110.qq.com,node.52tt.com,*.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, *.grammarly.com, api.polaxiong.com, api-cs.intsig.net
 
 
 #################################################################################
@@ -12,7 +12,6 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ^https://link\.zhihu\.com/\?target=(https?)%3A//(.*) url 307 $1://$2
 
 ^https://oia\.zhihu\.com url 307 https://zhuanlan.zhihu.com
-
 
 ^https?:\/\/pic\d\.zhimg\.com\/70\/ url reject-200
 ^https?:\/\/(api|www)\.zhihu\.com\/(ab|adx|fringe|commercial|ad-style-service|.*(recommendations|extended|featured-comment-ad)|api\/v4\/(brand|mcn|(answer|question)s\/\d+\/meta_related_topics)|brand\/questions\/\d+\/activity\/answers\/red-packet(\/|\?|$)) url reject-200
@@ -43,14 +42,12 @@ hostname = *.music.163.com,music.163.com,*.music.126.net,music.126.net,mobwsa.xi
 ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 
-
 # JD App 显示历史价格 (By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
 # Taobao App 显示历史价格 (By yichahucha https://github.com/yichahucha/surge/tree/master)
 ^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
-
 
 #################################################################################
 
@@ -193,6 +190,12 @@ https:\/\/api\.termius\.com\/api\/.+\/bulk\/account\/ url script-response-body h
 
 #dayone (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
 ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/dayone.js
+
+#endel (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/api-production\.endel\.io\/.*\/user$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/endel.js
+
+#grammarly (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
+^https:\/\/subscription\.grammarly\.com\/api\/v1$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/grammarly.js
 
 #ulysses (By langkhach https://github.com/langkhach270389/Quantumult-X-LK)
 ;^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/ulysses.js
