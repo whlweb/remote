@@ -1,0 +1,6 @@
+host, login.microsoftonline.com, direct
+host, statics.teams.cdn.office.net, direct
+host, in.appcenter.ms, direct
+host-suffix, events.data.microsoft.com, direct
+host-suffix, teams.events.data.microsoft.com, direct
+host-suffix, teams.microsoft.com, direct

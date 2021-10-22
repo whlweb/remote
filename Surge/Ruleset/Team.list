@@ -1,0 +1,8 @@
+
+# > Microsoft Teams software
+DOMAIN, login.microsoftonline.com
+DOMAIN, statics.teams.cdn.office.net
+DOMAIN, in.appcenter.ms
+DOMAIN-SUFFIX, events.data.microsoft.com
+DOMAIN-SUFFIX, teams.events.data.microsoft.com
+DOMAIN-SUFFIX, teams.microsoft.com
