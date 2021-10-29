@@ -12,6 +12,6 @@ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body
 ^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post) url script-response-body https://choler.github.io/Surge/Script/Aweme.js
 
 # 小小影视Vip (By Meeta)
-https:\/\/ios\.xiaoxiaoapps\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) url script-response-body x/NobyDa/QuantumultX/File/xxys.js
+https:\/\/.*\.(xiaoxiaoapps|xiaoxiaoimg)\.com\/(ssp-svr\/ssp\/list3|ucp/index|getGlobalData) url script-response-body https://raw.githubusercontent.com/photonmang/quantumultX/master/xxys.js
 # 启动广告
 #https:\/\/ios\.xiaoxiaoapps\.com\/getGlobalData url reject
