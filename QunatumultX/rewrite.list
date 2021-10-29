@@ -8,6 +8,6 @@ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body
 ^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi url script-response-body https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
 
 # 小小影视Vip (By Meeta)
-https:\/\/.*\.(xiaoxiaoapps|xiaoxiaoimg)\.com\/(ssp-svr\/ssp\/list3|ucp/index|getGlobalData) url script-response-body https://raw.githubusercontent.com/photonmang/quantumultX/master/xxys.js
+https:\/\/.*\.(xiaoxiaoapps|xiaoxiaoimg|wangbiwu)\.com\/(ssp-svr\/ssp\/list3|ucp/index|getGlobalData) url script-response-body https://raw.githubusercontent.com/photonmang/quantumultX/master/xxys.js
 # 启动广告
-#https:\/\/ios\.xiaoxiaoapps\.com\/getGlobalData url reject
+#https:\/\/.*\.(xiaoxiaoapps|xiaoxiaoimg|wangbiwu)\.com\/getGlobalData url reject
